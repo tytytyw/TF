@@ -1,4 +1,4 @@
-@charset "UTF-8";
+/* @charset "UTF-8"; */
 
 body {
     padding: 0;
@@ -19,13 +19,13 @@ p {
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
-@font-face {
+/* @font-face {
     font-family: 'FontAwesome';
     src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
     src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
     font-weight: normal;
     font-style: normal
-}
+} */
 
 .fa {
     display: inline-block;
@@ -4670,7 +4670,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     transform: perspective(2500px) rotateX(0)
 }
 
-@font-face {
+/* @font-face {
     font-family: 'HelveticaNeueCyr';
     src: url("../fonts/HelveticaNeueCyr-Medium.eot");
     src: local("HelveticaNeueCyr-Medium"), url("../fonts/HelveticaNeueCyr-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Medium.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Medium.ttf") format("truetype");
@@ -4796,7 +4796,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     src: local("HelveticaNeueCyr-Thin"), url("../fonts/HelveticaNeueCyr-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Thin.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Thin.ttf") format("truetype");
     font-weight: 100;
     font-style: normal
-}
+} */
 
 body.compensate-for-scrollbar {
     overflow: hidden
@@ -5735,13 +5735,12 @@ body.compensate-for-scrollbar {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
-    flex-direction: column
+    flex-direction: column;
 }
 
 .swiper-wrapper {
     position: relative;
     width: 100%;
-    height: 100%;
     z-index: 1;
     display: -webkit-box;
     display: -webkit-flex;
@@ -5754,7 +5753,8 @@ body.compensate-for-scrollbar {
     transition-property: transform, -webkit-transform;
     transition-property: transform, -webkit-transform;
     -webkit-box-sizing: content-box;
-    box-sizing: content-box
+    box-sizing: content-box;
+    height: max-content;
 }
 
 .swiper-container-android .swiper-slide,
@@ -10876,7 +10876,10 @@ a.ui-button:active,
     top: 50%;
     left: 50%;
     -webkit-transform: translate3d(-50%, -50%, 0);
-    transform: translate3d(-50%, -50%, 0)
+    transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    -ms-transform: translate3d(-50%, -50%, 0);
+    -o-transform: translate3d(-50%, -50%, 0);
 }
 
 .b-photo-cap__title {
@@ -11230,7 +11233,8 @@ a.ui-button:active,
 }
 
 .b-promo__wrapper {
-    position: relative
+    position: relative;
+    z-index: 1;
 }
 
 .b-promo__slide {
@@ -11238,6 +11242,17 @@ a.ui-button:active,
     background: black;
     background-position: center;
     background-size: cover
+}
+
+.b-promo__slide::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.6;
 }
 
 .b-promo__content {
@@ -11255,10 +11270,6 @@ a.ui-button:active,
     text-transform: uppercase;
     color: white;
     font-weight: bold
-}
-
-.b-promo__subtitle {
-    text-transform: uppercase
 }
 
 .b-promo__button {
