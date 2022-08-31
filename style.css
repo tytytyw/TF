@@ -17323,7 +17323,7 @@ a.ui-button:active,
     width: 850px;
     padding-top: 430px;
     background: url(./assets/ipad_talents.png) center no-repeat;
-    background-size: 100% 100%;
+    background-size: contain;
 }
 
 .webinar_link_mobile {
@@ -17349,7 +17349,7 @@ a.ui-button:active,
         padding-top: 374.35294px;
         margin-top: -187.17647px;
         background: url(./assets/ipad_talents.png) center no-repeat;
-        background-size: 100% 100%;
+        background-size: contain;
     }
 }
 
@@ -17358,7 +17358,7 @@ a.ui-button:active,
         width: 100%;
         padding-top: 50.58824%;
         background: url(./assets/ipad_talents.png) center no-repeat;
-        background-size: 100% 100%;
+        background-size: contain;
         margin-top: 30px;
     }
 
