@@ -9859,13 +9859,14 @@ a.ui-button:active,
     color: #0072bc;
     font-weight: 500;
     text-transform: uppercase;
-    margin-left: 60px
+    margin-left: 60px;
+    min-height: 3em;
 }
 
 .b-business-functions__subtitle {
     color: #292929;
     font-weight: 500;
-    margin-left: 60px
+    margin-left: 60px;
 }
 
 .b-business-functions__description {
@@ -14242,7 +14243,7 @@ a.ui-button:active,
     .b-business-functions__title {
         margin-bottom: 5px;
         font-size: 14px;
-        line-height: 1.2
+        line-height: 1.2;
     }
 
     .b-business-functions__subtitle {
@@ -16282,7 +16283,8 @@ a.ui-button:active,
     .b-business-functions__title {
         margin-bottom: 5px;
         font-size: 16px;
-        line-height: 1.2
+        line-height: 1.2;
+        min-height: 4.8em;
     }
 
     .b-business-functions__subtitle {
