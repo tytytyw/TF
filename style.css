@@ -15,6 +15,10 @@ p {
     line-height: 1.2
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
