@@ -17352,11 +17352,11 @@ a.ui-button:active,
         position: absolute;
         top: 50%;
         left: 0;
-        width: 740px;
         padding-top: 374.35294px;
         margin-top: -187.17647px;
         background: url(./assets/ipad_talents.png) center no-repeat;
         background-size: contain;
+        width: 60%;
     }
 }
 
