@@ -17526,6 +17526,10 @@ a.ui-button:active,
     margin-bottom: 80px
 }
 
+.decotation_none li::before {
+    display: none;
+}
+
 @media screen and (max-width:1100px) {
     .b-results-table__tile-inner {
         padding: 20px 25px 0 25px;
