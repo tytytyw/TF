@@ -16306,6 +16306,12 @@ a.ui-button:active,
         min-height: 105px
     }
 
+    @media (min-width: 1150px) {
+        .b-business-functions__description {
+            min-height: 80px
+        }
+    }
+
     .b-calculate-form__row {
         padding: 10px 0;
         display: -webkit-box;
