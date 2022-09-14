@@ -11840,12 +11840,13 @@ a.ui-button:active,
     font-size: 16px;
     /* font-weight: 500; */
     line-height: 1.2;
-    margin: 50px 0 30px
+    margin: 30px 0;
 }
 
 .b-solutions-content__text {
     font-size: 16px;
-    line-height: 1.2
+    line-height: 1.2;
+    margin: 30px 0;
 }
 
 .b-solutions-content__img-link {
@@ -11887,7 +11888,7 @@ a.ui-button:active,
 .b-solutions-content li {
     padding-left: 20px;
     position: relative;
-    margin-bottom: 3px
+    margin-bottom: 16px;
 }
 
 .b-solutions-content__li::before,
