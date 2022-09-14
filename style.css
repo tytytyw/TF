@@ -11808,7 +11808,7 @@ a.ui-button:active,
     background: #1a72b1;
     color: white;
     height: 28px;
-    line-height: 32px;
+    line-height: 28px;
     border-radius: 14px;
     padding: 0 20px;
     text-align: center;
@@ -11838,7 +11838,7 @@ a.ui-button:active,
 
 .b-solutions-content__subtitle {
     font-size: 16px;
-    font-weight: 500;
+    /* font-weight: 500; */
     line-height: 1.2;
     margin: 50px 0 30px
 }
